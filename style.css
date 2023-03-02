@@ -1,0 +1,42 @@
+nav {
+	background-color: #1e90ff;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	position: relative;
+}
+
+a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #1e90ff;
+}
+
+ul ul li {
+	display: block;
+}
+
+li:hover ul {
+	display: inherit;
+}
+
+li:hover a {
+	background-color: #007FFF;
+}
