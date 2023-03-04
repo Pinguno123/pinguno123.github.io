@@ -1,5 +1,6 @@
 nav {
 	background-color: #1e90ff;
+	border-radius: 5px;
 }
 
 ul {
@@ -47,3 +48,11 @@ li:hover a {
 	padding: 14px 16px;
 	text-decoration: none;
 }	
+
+main {
+	background-color: #7b9ee2;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
