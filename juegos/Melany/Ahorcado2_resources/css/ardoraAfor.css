@@ -78,3 +78,63 @@ border-width:1px;}
 .imaLeft{margin-right:5px; margin-bottom:5px;} .imaRight{margin-left:5px; margin-bottom:5px;}
 #ardoraQuest{font-family:Verdana, Geneva, sans-serif;font-size:14px;color:#000000;text-align: justify;padding: 0 5px 0 5px;} #ardoraImage{width: 100%; text-align: center;} #ardoraQuest img{cursor: pointer;}
 #ardoraAutor{padding-left:5px; clear:both; font-size: 20px; }
+/**nuevo codigo**/ 
+
+nav {
+	background-color: #1e90ff;
+	border-radius: 5px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	position: relative;
+}
+
+a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #1e90ff;
+}
+
+ul ul li {
+	display: block;
+}
+
+li:hover ul {
+	display: inherit;
+}
+
+li:hover a {
+	background-color: #007FFF;
+}
+#menu1 {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}	
+
+main {
+	background-color: #7b9ee2;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

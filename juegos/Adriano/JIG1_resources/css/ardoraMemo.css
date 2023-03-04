@@ -86,3 +86,64 @@ width:149px; height: 112px;background-position: center; background-repeat: no-re
 .imaCell p{position:absolute; bottom: 0px; left:3px; width:146px; z-index: 0; opacity: 0; cursor: pointer;font-size:15px;
 background:rgba(128,128,128,0.7);}
 #ardoraAutor{padding-left:5px; clear:both; font-size: 20px; };
+
+/**nuevo codigo**/ 
+
+nav {
+	background-color: #1e90ff;
+	border-radius: 5px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	position: relative;
+}
+
+a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #1e90ff;
+}
+
+ul ul li {
+	display: block;
+}
+
+li:hover ul {
+	display: inherit;
+}
+
+li:hover a {
+	background-color: #007FFF;
+}
+#menu1 {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}	
+
+main {
+	background-color: #7b9ee2;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
