@@ -14,7 +14,7 @@ En constante desarrollo y actualizaciones al usuario Pinguno123.
 
 Welcome to pinguno123.github.io
 
-This project is a product of the Software Development table #6 of the Padre Arrupe Spanish School where there are several games made in the Ardora 9 portable program for the English subject.
+This project is a product of the Software Development table #6 of the "Colegio Español Padre Arrupe" where there are several games made in the Ardora 9 portable program for the English subject.
 
 In it you can improve the skills in the English language through educational games.
 
