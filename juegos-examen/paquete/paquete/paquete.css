@@ -1,0 +1,170 @@
+/* Created by ARDORA - http://www.webardora.net */
+body{
+font-family:Georgia, Serif;
+background-image:url("images/cuadricula.gif");
+background-position:center;
+background-repeat:repeat;
+background-color:#F9F9F7;
+	text-align:justify; font-weight:normal;}
+#cabecera{
+	margin:0px;
+	border-color:#000000;
+	border-width:1px;
+	border-style:solid;
+	background-color:#0099FF;
+	height:80px;
+	padding:0px;
+-webkit-box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5); box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5);
+}
+#cabecera h1{
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:5px;
+	color:#FFFFFF;
+	font-size:28px;
+	width:60%;
+
+}
+#cabecera h2{
+	margin-top:0px;
+	margin-left:5px;
+	margin-bottom:0px;
+	color:#000000;
+	font-size:18px;
+	width:60%;
+}
+#cabecera h3{
+	margin-top:5px;
+	margin-right:5px;
+	margin-bottom:0px;
+	float:right;
+
+}
+#cabecera h4{
+	margin-top:0px;
+}
+#cabecera h4 a{
+	margin-top:0px;
+	text-decoration: none;
+	float:right;
+	background:#0099FF;
+	color:#FFFFFF;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:4px;
+	padding-top:0px;
+}
+#cabecera h4 a:hover{
+	background:#FFFFFF;
+	color:#0099FF;
+	border:none;
+	text-decoration: none;
+}
+#menu{
+	margin-top:5px;
+	border-color:#000000;
+	border-width:1px;
+	border-style:solid;
+	background-color:#0099FF;
+	padding:0px;
+	float:left;
+	width:15%;
+-webkit-box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5); box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5);
+}
+#menu h1{
+	margin-top:5px;
+	margin-left:5px;
+	margin-bottom:0px;
+	color:#000000;
+	font-size:18px;
+	font-size:16px;
+}
+#menu a{
+	margin-top:0px;
+	margin-left:10px;
+	margin-bottom:0px;
+	margin-right:5px;
+	background:#0099FF;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-size:14px;
+}
+#menu a:hover{
+	background:#FFFFFF;
+	color:#0099FF;
+	border:none;
+	text-decoration: none;
+}
+#areaContido{
+	
+	float:right;
+	width:84%;
+}
+#areaContido h1{
+	margin-top:5px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:0px;
+	font-size:16px;
+	font-weight:bold;
+}
+#areaContido h2{
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:0px;
+	margin-bottom:0px;
+	font-size:14px;
+	font-weight:normal;
+}
+
+#areaContido p{
+	margin:0px;
+	padding:0px;
+}
+#areaContido a{
+	color:#0099FF;
+	text-decoration:none;
+	margin-top:0px;
+	margin-bottom:0px;
+	font-size:14px;
+}
+#areaContido a:hover{
+	background-color:#0099FF;
+	color:#FFFFFF;
+}
+#areaApplet {
+	margin-top:5px;
+	margin-bottom:5px;
+	border-color:#000000;
+	border-width:1px;
+	border-style:solid;
+	background-color:#FFFFFF;
+-webkit-box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5); box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5);
+}
+#areaApplet h3{
+	margin-top:5px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:5px;
+	font-size:12px;
+	font-weight:normal;
+}
+.lista{display:list-item; list-style:none;}
+#pie{
+	margin-top:5px;
+	border-color:#000000;
+	border-width:1px;
+	border-style:solid;
+	background-color:#0099FF;
+	padding:0px;
+	clear:both;
+-webkit-box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5); box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.5);
+}
+#pie p{font-size:12px;margin:0px;}
+object{overflow:hidden;}
+#backmodal{background-color:rgba(0,0,0, 0.5);text-align:center;}
+#modalw{font-size: 20px;display: inline-table;margin-top:10%;padding: 25px;text-align:justify;font-family: sans-serif;background-color:rgba(255,255,255,1)}
+#cancelbut, #okbut{border-radius:8px;font-size: 28px;color: white;margin-top: 10px; cursor: pointer;}
+#cancelbut:hover, #okbut:hover{box-shadow: inset 0px 0px 20px rgba(0,0,0,1);}
+#cancelbut{padding: 2px 5px 5px 5px;background-color: red;float: left;}
+#okbut{padding: 2px 8px 5px 8px;background-color: green;float:right;s}
