@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Muestra de códigos Java</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* Estilos para el código */
+      pre {
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        font-family: monospace;
+        padding: 10px;
+        overflow-x: auto;
+      }
+      /* Estilos para los títulos */
+      h2 {
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Muestra de códigos Java</h1>
+    </header>
+    <main>
+      <section>
+        <h2 style="padding-bottom: 20px;">Usar objeto Scanner</h2>
+        <pre>
+          <code>
+            import java.util.Scanner;
+            public class Main {
+                public static void main(String[] args) {
+                Scanner teclado = new Scanner(System.in);
+              }
+            }
+          </code>
+        </pre>
+      </section>
+      <section>
+        <h1 style="margin-left: 20px;">Ejemplo:</h1>
+        <h2 style="font-size: medium;">Los estudiantes del colegio Padre Arrupe quieren conocer su promedio de notas,
+            para ello necesitan solicitar tres notas, así que crean un programa con Java que les
+            pide su nombre y sus tres notas, para este programa se pide que analicé con un
+            pequeño diagrama en DFD y luego realizar la codificación.</h2>
+        <pre>
+          <code>
+            import javax.sound.sampled.Line;
+            import java.util.Scanner;
+            public class Main {
+                public static void main(String[] args) {
+                    Scanner teclado = new Scanner(System.in);
+            
+                    String  nombre;
+                    float nota1;
+                    float nota2;
+                    float nota3;
+                    float suma;
+                    float division;
+            
+                System.out.print("Ingrese su nombre completo : ");
+                nombre= teclado.nextLine();
+            
+                System.out.print("Ingrese su primera nota : ");
+                nota1= teclado.nextFloat();
+            
+                if (nota1 > 10) {
+                    System.out.println("La nota ingresada es superior a 10, ingrese otra nota");
+                    }
+                    else if (nota1 <= 10) {
+                        System.out.print("Ingrese su segunda nota : ");
+                    }
+            
+                nota2= teclado.nextFloat();
+            
+                if (nota2 > 10) {
+                        System.out.println("La nota ingresada es superior a 10, ingrese otra nota");}
+            
+                    else if (nota2 <= 10) {
+                        System.out.print("Ingrese su tercera nota : ");}
+            
+                nota3= teclado.nextFloat();
+            
+                if (nota3 > 10) {
+                        System.out.println("La nota ingresada es superior a 10, ingrese otra nota");}
+            
+                    else if (nota3 <= 10) {
+            
+                suma= nota1 + nota2 + nota3;
+            
+                division= suma / 3;
+            
+                System.out.println("El promedio de " + nombre + " es de : " + division);}
+            
+                    }
+                }
+          </code>
+        </pre>
+      </section>
+      <section>
+        <h2>Ejemplo de switch case</h2>
+        <pre>
+          <code>
+            import java.util.Scanner;               //Se importa la clase Scanner
+
+
+            public class Main {
+            
+                public static void main(String[] args) {  //Función main
+            
+                        Scanner scanner = new Scanner(System.in);
+                        System.out.println("Ingrese dos números: ");
+                        double num1 = scanner.nextDouble();
+                        double num2 = scanner.nextDouble();
+            
+                        System.out.println("Ingrese la opción deseada: ");
+                        System.out.println("1: Sumar dos números");
+                        System.out.println("2: Restar dos números");
+                        System.out.println("3: Multiplicar dos números");
+                        int opcion = scanner.nextInt();
+            
+                        double resultado;
+            
+                        switch (opcion) {
+                            case 1:
+                                resultado = num1 + num2;
+                                System.out.println("La suma de " + num1 + " y " + num2 + " es " + resultado);
+                                break;
+                            case 2:
+                                resultado = num1 - num2;
+                                System.out.println("La resta de " + num1 + " y " + num2 + " es " + resultado);
+                                break;
+                            case 3:
+                                resultado = num1 * num2;
+                                System.out.println("El producto de " + num1 + " y " + num2 + " es " + resultado);
+                                break;
+                            default:
+                                System.out.println("Opción no válida");
+                                break;
+                        }
+                    }
+            
+                }
+          </code>
+        </pre>
+      </section>
+      <section>
+        <h2>Ejemplo de ciclo for</h2>
+        <pre>
+         <code>
+            import java.util.Scanner;               //Se importa la clase Scanner
+
+
+            public class Main {
+
+            public static void main(String[] args) {    //Función main
+                
+                Scanner sc = new Scanner(System.in);    
+
+                int num;
+
+                System.out.print("Introduce un número entero: ");    
+                                                                     
+                num = sc.nextInt();
+
+                System.out.println("Tabla del " + num);
+
+                for(int i = 1; i<=10; i++){
+                     System.out.println(num + " * " + i + " = " + num*i);                                                     
+                }
+            }	
+        }
+         </code>
+        </pre>
+      </section>
+      <section>
+        <h2 style="font-size: medium;">Crear un programa tal que, dado como datos la categoría y el sueldo de un trabajador, calcule el aumento correspondiente teniendo en cuenta la siguiente tabla. El programa debe imprimir   el nuevo sueldo</h2>
+        <style>
+            table, th, td {
+              border:1px solid black;
+            }
+            </style>
+        <table style="width: 500px; margin-left: 20px; margin-bottom: 20px;">
+            <tr style="text-align: center;">
+                <th>Categoria</th>
+                <th>Aumento</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>8%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>7%</td>
+            </tr>
+          </table>
+        <pre>
+            <code>
+                import java.util.Scanner;
+
+                public class Prueba001 {
+                
+                    public static void main(String[] args) {
+                
+                        Scanner scanner = new Scanner(System.in);
+                
+                        System.out.print("Ingrese su sueldo : ");
+                        double sueldo = scanner.nextDouble();
+                
+                        System.out.println("Ingrese la opción deseada para evaluar su sueldo : ");
+                        System.out.println("1: Aumento del 15%");
+                        System.out.println("2: Aumento del 10%");
+                        System.out.println("3: Aumento del 8%");
+                        System.out.println("4: Aumento del 7%");
+                        int opcion = scanner.nextInt();
+                
+                        double operacion;
+                        double resultado;
+                
+                        switch (opcion) {
+                            
+                            case 1:
+                
+                                operacion = sueldo * 0.15 ;
+                                resultado = sueldo + operacion;
+                                System.out.println("Su sueldo evaluado es de "+resultado);break;
+                
+                            case 2:
+                
+                                operacion = sueldo * 0.10 ;
+                                resultado = sueldo + operacion;
+                                System.out.println("Su sueldo evaluado es de "+resultado);break;
+                
+                            case 3:
+                
+                                operacion = sueldo * 0.08 ;
+                                resultado = sueldo + operacion;
+                                System.out.println("Su sueldo evaluado es de "+resultado);break;
+                
+                            case 4:
+                                operacion = sueldo * 0.07 ;
+                                resultado = sueldo + operacion;
+                                System.out.println("Su sueldo evaluado es de "+resultado);break;
+                
+                            default:
+                                System.out.println("Opción no válida");
+                                break;
+                                
+                        }
+                    }
+                }
+            </code>
+        </pre>
+      </section>
+      <ul style="text-align: center";>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+    </main>
+  </body>
+</html>

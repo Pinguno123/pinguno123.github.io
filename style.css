@@ -70,3 +70,17 @@ main {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+#menu2 {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}	
+#body1 {
+	display: block;
+	color: #000000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}	
