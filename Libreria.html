@@ -3,7 +3,9 @@
   <head>
     <title>Muestra de códigos Java</title>
     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
     <style>
+
       /* Estilos para el código */
       pre {
         background-color: #f5f5f5;
@@ -12,38 +14,93 @@
         padding: 10px;
         overflow-x: auto;
       }
+
       /* Estilos para los títulos */
       h2 {
         margin-left: 20px;
         margin-bottom: 20px;
       }
+
+      button {
+        margin-left: 20px;
+        margin-top: 10px;
+      }
     </style>
   </head>
   <body>
+
     <header>
-      <h1>Muestra de códigos Java</h1>
+      <h1>Libreria de codigos Java</h1>
     </header>
+
     <main>
+
       <section>
-        <h2 style="padding-bottom: 20px;">Usar objeto Scanner</h2>
-        <pre>
+        <table class="code1">
+
+        <tr id="code1">
+          <th><h2 style="padding-bottom: 20px;">Usar objeto Scanner</h2></th>
+          <th style="float: left;"><button id="btnCopiar"><img src="https://cdn-icons-png.flaticon.com/512/3240/3240400.png" style="height: 50px;"></img></button></th>
+        </tr>
+
+      </table>
+
+        <pre id="textoACopiar">
           <code>
-            import java.util.Scanner;
-            public class Main {
-                public static void main(String[] args) {
-                Scanner teclado = new Scanner(System.in);
-              }
-            }
+import java.util.Scanner;
+public class Main {
+public static void main(String[] args) {
+Scanner teclado = new Scanner(System.in);
+}
+}
           </code>
         </pre>
       </section>
+      <script>
+        //Asigno el evento "click" del botón para provoar el copiado
+        document.getElementById('btnCopiar').addEventListener('click', copiarAlPortapapeles);
+        //Función que lanza el copiado del código
+        function copiarAlPortapapeles(ev){
+            var codigoACopiar = document.getElementById('textoACopiar');    //Elemento a copiar
+            //Debe estar seleccionado en la página para que surta efecto, así que...
+            var seleccion = document.createRange(); //Creo una nueva selección vacía
+            seleccion.selectNodeContents(codigoACopiar);    //incluyo el nodo en la selección
+            //Antes de añadir el intervalo de selección a la selección actual, elimino otros que pudieran existir (sino no funciona en Edge)
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(seleccion);  //Y la añado a lo seleccionado actualmente
+            try {
+                var res = document.execCommand('copy'); //Intento el copiado
+                if (res)
+                    exito();
+                else
+                    fracaso();
+    
+                mostrarAlerta();
+            }
+            catch(ex) {
+                excepcion();
+            }
+            window.getSelection().removeRange(seleccion);
+        }
+    </script>
+
       <section>
-        <h1 style="margin-left: 20px;">Ejemplo:</h1>
+        
+        <table>
+
+          <tr>
+            <th><h1 style="margin-left: 20px;">Ejemplo:</h1></th>
+            <th style="float: left;"><button id="btnCode2"><img src="https://cdn-icons-png.flaticon.com/512/3240/3240400.png"  style="height: 50px;"></img></button></th>
+          </tr>
+  
+        </table>
+
         <h2 style="font-size: medium;">Los estudiantes del colegio Padre Arrupe quieren conocer su promedio de notas,
             para ello necesitan solicitar tres notas, así que crean un programa con Java que les
             pide su nombre y sus tres notas, para este programa se pide que analicé con un
             pequeño diagrama en DFD y luego realizar la codificación.</h2>
-        <pre>
+
+        <pre id="Code2">
           <code>
             import javax.sound.sampled.Line;
             import java.util.Scanner;
@@ -97,9 +154,42 @@
           </code>
         </pre>
       </section>
+      <script>
+        //Asigno el evento "click" del botón para provoar el copiado
+        document.getElementById('btnCode2').addEventListener('click', copiarAlPortapapeles);
+        //Función que lanza el copiado del código
+        function copiarAlPortapapeles(ev){
+            var codigoACopiar = document.getElementById('Code2');    //Elemento a copiar
+            //Debe estar seleccionado en la página para que surta efecto, así que...
+            var seleccion = document.createRange(); //Creo una nueva selección vacía
+            seleccion.selectNodeContents(codigoACopiar);    //incluyo el nodo en la selección
+            //Antes de añadir el intervalo de selección a la selección actual, elimino otros que pudieran existir (sino no funciona en Edge)
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(seleccion);  //Y la añado a lo seleccionado actualmente
+            try {
+                var res = document.execCommand('copy'); //Intento el copiado
+                if (res)
+                    exito();
+                else
+                    fracaso();
+    
+                mostrarAlerta();
+            }
+            catch(ex) {
+                excepcion();
+            }
+            window.getSelection().removeRange(seleccion);
+        }
+    </script>
+
       <section>
-        <h2>Ejemplo de switch case</h2>
-        <pre>
+        <table>
+        <td>
+          <th><h2>Ejemplo de switch case</h2></th>
+          <th style="float: left;"><button id="btnCode3"><img src="https://cdn-icons-png.flaticon.com/512/3240/3240400.png" style="height: 50px;"></img></button></th>
+        </td>
+      </table>
+        <pre id="Code3">
           <code>
             import java.util.Scanner;               //Se importa la clase Scanner
 
@@ -144,9 +234,43 @@
           </code>
         </pre>
       </section>
+      <script>
+        //Asigno el evento "click" del botón para provoar el copiado
+        document.getElementById('btnCode3').addEventListener('click', copiarAlPortapapeles);
+        //Función que lanza el copiado del código
+        function copiarAlPortapapeles(ev){
+            var codigoACopiar = document.getElementById('Code3');    //Elemento a copiar
+            //Debe estar seleccionado en la página para que surta efecto, así que...
+            var seleccion = document.createRange(); //Creo una nueva selección vacía
+            seleccion.selectNodeContents(codigoACopiar);    //incluyo el nodo en la selección
+            //Antes de añadir el intervalo de selección a la selección actual, elimino otros que pudieran existir (sino no funciona en Edge)
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(seleccion);  //Y la añado a lo seleccionado actualmente
+            try {
+                var res = document.execCommand('copy'); //Intento el copiado
+                if (res)
+                    exito();
+                else
+                    fracaso();
+    
+                mostrarAlerta();
+            }
+            catch(ex) {
+                excepcion();
+            }
+            window.getSelection().removeRange(seleccion);
+        }
+    </script>
+
       <section>
-        <h2>Ejemplo de ciclo for</h2>
-        <pre>
+        <table>
+          <th>
+            <h2>Ejemplo de ciclo for</h2>
+            <th style="float: left;"><button id="btnCode4"><img src="https://cdn-icons-png.flaticon.com/512/3240/3240400.png" style="height: 50px;"></img></button></th>
+          </th>
+        </table>
+
+        <pre id="Code4">
          <code>
             import java.util.Scanner;               //Se importa la clase Scanner
 
@@ -173,20 +297,50 @@
          </code>
         </pre>
       </section>
-      <section>
-        <h2 style="font-size: medium;">Crear un programa tal que, dado como datos la categoría y el sueldo de un trabajador, calcule el aumento correspondiente teniendo en cuenta la siguiente tabla. El programa debe imprimir   el nuevo sueldo</h2>
-        <style>
-            table, th, td {
-              border:1px solid black;
+
+      <script>
+        //Asigno el evento "click" del botón para provoar el copiado
+        document.getElementById('btnCode4').addEventListener('click', copiarAlPortapapeles);
+        //Función que lanza el copiado del código
+        function copiarAlPortapapeles(ev){
+            var codigoACopiar = document.getElementById('Code4');    //Elemento a copiar
+            //Debe estar seleccionado en la página para que surta efecto, así que...
+            var seleccion = document.createRange(); //Creo una nueva selección vacía
+            seleccion.selectNodeContents(codigoACopiar);    //incluyo el nodo en la selección
+            //Antes de añadir el intervalo de selección a la selección actual, elimino otros que pudieran existir (sino no funciona en Edge)
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(seleccion);  //Y la añado a lo seleccionado actualmente
+            try {
+                var res = document.execCommand('copy'); //Intento el copiado
+                if (res)
+                    exito();
+                else
+                    fracaso();
+    
+                mostrarAlerta();
             }
-            </style>
+            catch(ex) {
+                excepcion();
+            }
+            window.getSelection().removeRange(seleccion);
+        }
+    </script>
+
+      <section>
+        <table>
+          <td>
+            <th><h2 style="font-size: medium;">Crear un programa tal que, dado como datos la categoría y el sueldo de un trabajador, calcule el aumento correspondiente teniendo en cuenta la siguiente tabla. El programa debe imprimir   el nuevo sueldo</h2></th>
+            <th style="float: left;"><button id="btnCode5"><img src="https://cdn-icons-png.flaticon.com/512/3240/3240400.png" style="height: 50px;"></img></button></th>
+          </td>
+        </table>
+        <div class="tablacodigo">
         <table style="width: 500px; margin-left: 20px; margin-bottom: 20px;">
-            <tr style="text-align: center;">
+            <tr style="text-align: center; border: 1px solid black;">
                 <th>Categoria</th>
                 <th>Aumento</th>
             </tr>
             <tr>
-                <td>1</td>
+                <td style="border: 1px solid black;">1</td>
                 <td>15%</td>
             </tr>
             <tr>
@@ -202,7 +356,8 @@
                 <td>7%</td>
             </tr>
           </table>
-        <pre>
+        </div>
+        <pre id="Code5">
             <code>
                 import java.util.Scanner;
 
@@ -260,8 +415,104 @@
             </code>
         </pre>
       </section>
+      <script>
+        //Asigno el evento "click" del botón para provoar el copiado
+        document.getElementById('btnCode5').addEventListener('click', copiarAlPortapapeles);
+        //Función que lanza el copiado del código
+        function copiarAlPortapapeles(ev){
+            var codigoACopiar = document.getElementById('Code5');    //Elemento a copiar
+            //Debe estar seleccionado en la página para que surta efecto, así que...
+            var seleccion = document.createRange(); //Creo una nueva selección vacía
+            seleccion.selectNodeContents(codigoACopiar);    //incluyo el nodo en la selección
+            //Antes de añadir el intervalo de selección a la selección actual, elimino otros que pudieran existir (sino no funciona en Edge)
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(seleccion);  //Y la añado a lo seleccionado actualmente
+            try {
+                var res = document.execCommand('copy'); //Intento el copiado
+                if (res)
+                    exito();
+                else
+                    fracaso();
+    
+                mostrarAlerta();
+            }
+            catch(ex) {
+                excepcion();
+            }
+            window.getSelection().removeRange(seleccion);
+        }
+    </script>
+
+      <section>
+        <table>
+          <td>
+            <th><h2>Programa para sacar el promedio de notas infinitas</h2></th>
+            <th style="float: left;"><button id="btnCode6"><img src="https://cdn-icons-png.flaticon.com/512/3240/3240400.png" style="height: 50px;"></img></button></th>
+          </td>
+        </table>
+        
+        <pre id="Code6">
+          <code>
+
+            import java.util.Scanner;
+            public class Main {
+
+            public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print("Ingrese la cantidad de notas a promediar: ");
+            int cantidadNotas = scanner.nextInt();
+
+            double sumaNotas = 0;
+
+            for (int i = 0; i < cantidadNotas; i++) {
+
+            System.out.print("Ingrese la nota " + (i+1) + ": ");
+
+            double nota = scanner.nextDouble();
+
+            sumaNotas += nota;
+             }
+            double promedio = sumaNotas / cantidadNotas;
+            System.out.println("El promedio de las " + cantidadNotas + " notas ingresadas es: " + promedio);
+              }
+            }
+            
+            made by: Alexandra Alvarado
+
+          </code>
+        </pre>
+      </section>
+      <script>
+        //Asigno el evento "click" del botón para provoar el copiado
+        document.getElementById('btnCode6').addEventListener('click', copiarAlPortapapeles);
+        //Función que lanza el copiado del código
+        function copiarAlPortapapeles(ev){
+            var codigoACopiar = document.getElementById('Code6');    //Elemento a copiar
+            //Debe estar seleccionado en la página para que surta efecto, así que...
+            var seleccion = document.createRange(); //Creo una nueva selección vacía
+            seleccion.selectNodeContents(codigoACopiar);    //incluyo el nodo en la selección
+            //Antes de añadir el intervalo de selección a la selección actual, elimino otros que pudieran existir (sino no funciona en Edge)
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(seleccion);  //Y la añado a lo seleccionado actualmente
+            try {
+                var res = document.execCommand('copy'); //Intento el copiado
+                if (res)
+                    exito();
+                else
+                    fracaso();
+    
+                mostrarAlerta();
+            }
+            catch(ex) {
+                excepcion();
+            }
+            window.getSelection().removeRange(seleccion);
+        }
+    </script>
       <ul style="text-align: center";>
         <li><a href="index.html">Home</a></li>
+        <li><a href="">pruebas.html</a></li>
     </ul>
     </main>
   </body>
