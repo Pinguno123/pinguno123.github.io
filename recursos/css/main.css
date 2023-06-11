@@ -19,6 +19,8 @@
   margin: 20px;
   position: sticky;
   top: 0;
+  background: white;
+  border-radius: 5px;
 }
 
 #navegador .logo {
