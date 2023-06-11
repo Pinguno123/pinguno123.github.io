@@ -7,8 +7,6 @@ En él se puede mejorar las hablidades en el idioma Ingles atravéz de juegos di
 
 Se puede ocupar el codigo fuente pidiendo permiso al creador.
 
-Dudas al correo douglasanchez.7b@gmail.com
-
 En constante desarrollo y actualizaciones al usuario Pinguno123.
 
 
@@ -19,7 +17,5 @@ This project is a product of the Software Development table #6 of the "Colegio E
 In it you can improve the skills in the English language through educational games.
 
 You can use the source code by asking the creator for permission.
-
-Doubts to the email douglasanchez.7b@gmail.com
 
 In constant development and updates to the user Pinguno123.
