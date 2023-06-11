@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: 20px auto auto auto;
+}
+
+.fuente-mediana {
+    font-weight: 400;
+}
+
+.fuente-pequeña {
+    font-weight: 300;
+}
+
+.fuente-grande {
+    font-weight: 700;
+}
+
+/* CSS menu */
+.menu {
+    padding: 10px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(114, 63, 181, 0.6);
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(109, 107, 107);
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu .links a {
+    margin-right: 10px;
+    font-size: 18px;
+    color: rgb(114, 63, 181);
+}
+
+.menu .links a:hover {
+    color: black;
+}
+
+/* CSS contenido destacado */
+.destacado {
+    margin-top: 20px;
+    background-image: linear-gradient(120deg, rgba(161, 196, 253, 0.4) 0%, rgb(194, 233, 251, 0.4) 100%), url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 50vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.destacado h1 {
+    font-size: 45px;
+}
+
+/* CSS servicios */
+.servicios {
+    max-height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicios img {
+    border-radius: 5px;
+    width: auto;
+    height: 500px;
+}
+
+.servicios .servicios-lista {
+    width: 45%;
+}
+
+.servicios .servicios-lista h2 {
+    color: #723fb5;
+}
+
+.servicios .servicios-lista p {
+    font-weight: 300;
+}
+
+.servicios .servicios-lista h2,
+.servicios .servicios-lista p {
+    margin-bottom: 15px;
+}
+
+/* CSS contactos en footer */
+footer {
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px 10px 10px 10px;
+    background-image: linear-gradient(120deg, rgb(224, 195, 252, 0.8) 0%, rgb(142, 197, 252, 0.6) 100%);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.redes {
+    display: flex;
+}
+
+.redes img {
+    width: 20px;
+    margin-right: 20px;
+}
+
+/* CSS experiencia */
+.experiencia {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.experiencia img {
+    width: 30%;
+    border-radius: 5px;
+    border: rgb(114, 63, 181, 0.5) 1px solid;
+}
+
+.contenedor-experiencia {
+    margin-top: 100px;
+}
+
+.contenedor-experiencia h1 {
+    color: #723fb5;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Main */
+main {
+    margin-bottom: 100px;
+}

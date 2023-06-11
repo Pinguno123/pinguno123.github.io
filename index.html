@@ -1,44 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Start Menu</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recursos/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <title>Pinguno123</title>
 </head>
 <body>
-	<header>
-	<nav>
-		<ul>
-			<li><p id="menu1">Single games</p>
-				<ul>
-					<div class="menujuegos">
-					<li><a href="https://pinguno123.github.io/juegos/Douglas/JIG.htm" target="_blanck">Douglas Sánchez</a></li>
-					<li><a href="juegos/David/index.htm" target="_blanck">David Adriel</a></li>
-					<li><a href="juegos/Adriano/JIG1.htm" target="_blanck">Adriano Salazar</a></li>
-					<li><a href="juegos/Shelsea/Letter_soup.htm" target="_blanck">Shelsea Burgos</a></li>
-					<li><a href="juegos/Tirsa/index.htm" target="_blanck">Tirsa Sánchez</a></li>
-					<li><a href="https://pinguno123.github.io/juegos/Melany/Ahorcado2.htm" target="_blanck">Melany Osorio</a></li>
-					</div>
-				</ul>
-			</li>
-			<li><a href="./index.html">Home</a></li>
-			<li><a href="Libreria.html">Libreria</a></li>
-			<li><a href="https://sitiosphp.000webhostapp.com/sitio.php">Dia de las madres</a></li>
-			<li><a href="Practicas-coding/Index.html">Practicas de codigo</a></li>
-			<li><a href="https://github.com/Pinguno123/Feria-Tecnica">Feria Tecnica</a></li>
-			<li><a href="https://github.com/Pinguno123/Portafolio-nuevo">Nuevo Portafolio</a></li>
-			<li><a href="home-page/index.html"></a>MetaDreams</li>
-		</ul>
-	</nav>
-	</header>
-	<main>
-	<h1 style="color: rgb(0, 0, 0);"><center>COLEGIO ESPAÑOL PADRE ARRUPE</center></h1>
-	<center><img src="recursos/imagenes/logo.png" height="300px" width="300px"></center>
-		<br>
-	<h2 style="margin-left: 20px; color: whitesmoke; font-size: 25px;">Creador :</h2>
-	<li id="integrantes" style="left: 120px; color: whitesmoke; font-size: 18px">
-		<ol>Douglas Emmanuel Sánchez Rivera</ol>
-
-	</li>
-	</main>
+    <nav id="navegador">
+        <a href="inicio" class="logo"><h2>PINGUNO123</h2></a>
+        <div class="menu">
+            <a href="">Proyectos</a>
+            <a href="">Colegio</a>
+            <a href="">Github</a>
+        </div>
+    </nav>
+    <header class="header">
+        <h1 class="titulo">"Convierte tus ideas en realidad, crea tu presencia en línea y deja que tu sitio web hable por ti."</h1>
+        <p class="parrafo">Douglas Emmanuel Sánchez Rivera #33</p>
+    </header>
+    <main class="main contenedor">
+        <section class="proyectos">
+            <div class="texto-proyectos-personales">
+                <h2>Proyectos personales</h2>
+            </div>
+            <div class="imagenes-proyectos">
+                <img src="recursos/imagenes/libreria.jpg" alt="libreria">
+                <img src="recursos/imagenes/madre.png" alt="dia de la madre">
+                <img src="recursos/imagenes/netflix.jpg" alt="netflix pirata">
+            </div>
+        </section>
+        <section class="proyectos-colegio">
+            <div class="texto-proyectos-colegio">
+                <h2>Proyectos del colegio</h2>
+            </div>
+            <div class="imagenes-proyectos-colegio">
+                <img src="recursos/imagenes/juegos.jpg" alt="juegos didacticos">
+                <img src="recursos/imagenes/bdd.jpg" alt="bases de datos">
+                <img src="recursos/imagenes/sql.png" alt="sql">
+            </div>
+        </section>
+        <section class="github">
+            <div class="texto-github">
+                <h2>Github</h2>
+            </div>
+            <div class="imagenes-github">
+                <img src="recursos/imagenes/github.png" alt="banner de github">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2>Pinguno123</h2>
+        <p>"Convierte tus ideas en realidad, crea tu presencia en línea y deja que tu sitio web hable por ti."</p>
+    </footer>
 </body>
 </html>

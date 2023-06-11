@@ -1,0 +1,125 @@
+:root {
+  --color-principal : rgb(171, 138, 208);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Navegador */
+#navegador {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px;
+  margin: 20px;
+  position: sticky;
+  top: 0;
+}
+
+#navegador .logo {
+  color: var(--color-principal);
+}
+
+#navegador a {
+  text-decoration: none;
+  color: var(--color-principal);
+  margin-right: 10px;
+}
+
+/* Header */
+.header {
+  margin-top: 20px;
+  background-image: linear-gradient(120deg, rgb(161, 196, 252, 0.3) 0%, rgb(194, 233, 251, 0.3) 100%), url(../imagenes/cabecera.jpg);  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 50vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* Contenedor */
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+/* Main */
+.main {
+  margin-top: 50px;
+  /* display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; */
+  overflow: hidden;
+}
+
+/* Proyectos */
+.proyectos {
+  color: var(--color-principal);
+}
+
+.proyectos .texto-proyectos-personales {
+  margin-bottom: 10px;
+}
+
+.proyectos .imagenes-proyectos img {
+  width: 33%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Proyectos Colegio */
+.proyectos-colegio {
+  color: var(--color-principal);
+  margin-top: 50px;
+}
+
+.proyectos-colegio .texto-proyectos-colegio {
+  margin-bottom: 10px;
+}
+
+.proyectos-colegio .imagenes-proyectos-colegio img {
+  width: 33%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Github */
+.github {
+  color: var(--color-principal);
+  margin-top: 50px;
+}
+
+.texto-github {
+  margin-bottom: 10px;
+}
+
+.imagenes-github {
+  width: 100%;
+  height: 300px;
+}
+
+/* Footer */
+footer {
+	padding-bottom: 0.1px;
+  padding: 20px;
+  margin: 20px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+
