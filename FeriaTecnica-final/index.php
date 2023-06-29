@@ -21,10 +21,10 @@
             <div class="texto">
                 <h3>Juegos de Química</h3>
             </div>
-            <div class="imagenes">
-                <a href=""><img src="" alt="Juego 1"></a>
-                <a href=""><img src="" alt="Juego 2"></a>
-                <a href=""><img src="" alt="Juego 3"></a>
+            <div class="imagenes1f">
+                <a href=""><img src="recursos/img/1.png" alt="Juego 1" class="imagenes"></a>
+                <a href=""><img src="recursos/img/2.png" alt="Juego 2" class="imagenes"></a>
+                <a href=""><img src="recursos/img/3.png" alt="Juego 3" class="imagenes"></a>
             </div>
         </section>        
         <section class="segundafila">
