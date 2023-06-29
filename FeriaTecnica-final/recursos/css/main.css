@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    padding: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+nav > h1 {
+    font-weight: 200;
+}
+nav > .links > a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+header > .cabecera {
+    background-image: linear-gradient(to top, rgb(207, 217, 223, 0.4) 0%, rgb(226, 235, 240, 0.3) 100%), url(../img/cabecera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+header > .cabecera > h1 {
+    margin-bottom: 5px;
+}
+.contenedor {
+    padding-top: 30px;
+    width: 90%;
+    margin: auto;
+}
+.texto > h3 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 30px;
+}
+.imagenes {
+    width: 33%;
+    height: 300px;
+    object-fit: cover;
+}
+
