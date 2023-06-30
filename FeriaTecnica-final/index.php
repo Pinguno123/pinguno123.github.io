@@ -22,14 +22,19 @@
                 <h3>Juegos de Química</h3>
             </div>
             <div class="imagenes1f">
-                <a href=""><img src="recursos/img/1.png" alt="Juego 1" class="imagenes"></a>
-                <a href=""><img src="recursos/img/2.png" alt="Juego 2" class="imagenes"></a>
-                <a href=""><img src="recursos/img/3.png" alt="Juego 3" class="imagenes"></a>
+                <a href="juegos/douglas/douglasJ.php"><img src="recursos/img/1.png" alt="Juego 1" class="imagenes"></a>
+                <a href="juegos/salvador/molec.php"><img src="recursos/img/2.png" alt="Juego 2" class="imagenes"></a>
+                <a href="juegos/amilcar/Tperiodica.php"><img src="recursos/img/3.png" alt="Juego 3" class="imagenes"></a>
             </div>
         </section>        
         <section class="segundafila">
-            
+            <div class="imagenes1f">
+                <a href="juegos/anderson/juegoAnderson.php"><img src="recursos/img/4.png" alt="Juego 4" class="imagenes"></a>
+                <a href=""><img src="recursos/img/5.png" alt="Juego 5" class="imagenes"></a>
+                <a href="juegos/dana/danaJ.php"><img src="recursos/img/6.png" alt="Juego 6" class="imagenes"></a>
+            </div>
         </section>
     </main>
+    <!-- <?php include("footer.php") ?> -->
 </body>
 </html>
