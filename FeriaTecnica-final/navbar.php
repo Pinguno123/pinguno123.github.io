@@ -32,8 +32,8 @@ nav > .logo > a {
         <a href="<?php echo $url_base?>juegos/douglas/douglasJ.php">Juego 1</a>
         <a href="<?php echo $url_base?>juegos/salvador/molec.php">Juego 2</a>
         <a href="<?php echo $url_base?>juegos/amilcar/Tperiodica.php">Juego 3</a>
-        <a href="<?php echo $url_base?>juegos/anderson/juegoAnderson.php">Juego 4</a>
-        <a href="<?php echo $url_base?>juegos/dana/danaJ.php">Juego 5</a>
+        <a href="<?php echo $url_base?>juegos/anderson/andersonJ.php">Juego 4</a>
+        <a href="<?php echo $url_base?>juegos/cesar/cesarJ.php">Juego 5</a>
         <a href="<?php echo $url_base?>juegos/dana/danaJ.php">Juego 6</a>
     </div>
 </nav>

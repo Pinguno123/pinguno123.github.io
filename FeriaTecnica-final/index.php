@@ -29,12 +29,11 @@
         </section>        
         <section class="segundafila">
             <div class="imagenes1f">
-                <a href="juegos/anderson/juegoAnderson.php"><img src="recursos/img/4.png" alt="Juego 4" class="imagenes"></a>
-                <a href=""><img src="recursos/img/5.png" alt="Juego 5" class="imagenes"></a>
+                <a href="juegos/anderson/andersonJ.php"><img src="recursos/img/4.png" alt="Juego 4" class="imagenes"></a>
+                <a href="juegos/cesar/cesarJ.php"><img src="recursos/img/5.png" alt="Juego 5" class="imagenes"></a>
                 <a href="juegos/dana/danaJ.php"><img src="recursos/img/6.png" alt="Juego 6" class="imagenes"></a>
             </div>
         </section>
     </main>
-    <!-- <?php include("footer.php") ?> -->
 </body>
 </html>
