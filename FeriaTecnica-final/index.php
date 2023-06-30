@@ -13,7 +13,7 @@
             <h1 class="titulo">
                 Chemical Learning
             </h1>
-            <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae hic soluta odio laboriosam nihil inventore incidunt, maiores praesentium reiciendis veniam!</p>
+            <p class="descripcion">¡Bienvenido al laboratorio virtual de diversión química! Prepara tu fórmula ganadora y sumérgete en una experiencia llena de desafíos científicos, donde los juegos te llevarán a descubrir la magia de los elementos y las reacciones químicas. ¿Estás listo para experimentar la emoción de jugar con la ciencia? ¡Únete a nosotros y desata tu lado químico en este fascinante mundo de juegos!</p>
         </div>
     </header>
     <main class="contenedor">
